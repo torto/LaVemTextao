@@ -12,16 +12,23 @@
 	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="vendor/sweetalert/dist/sweetalert.css">
-		<!-- build:css css/index.min.css -->
+	<!-- build:css css/index.min.css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/editor.css">
 	<!-- endbuild -->
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<title>SmartChat</title>
+	<title>Lá Vem Textão</title>
 
 	<body>
-
-		<div ng-view></div>
+		<div class="container">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<ul class="nav navbar-nav">
+						<li><a href="#/index">Config Text</a></li>
+						<li><a href="#">Config Rest</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="app-angular" ng-view></div>
+		</div>
 		<!-- Modulo Angular -->
 
 		<script type="text/javascript" src="vendor/angular/angular.js"></script>
@@ -39,7 +46,7 @@
 		<!-- build:js js/index.min.js -->
 		<script type="text/javascript" src="js/main.js"></script>
 
-    <script type="text/javascript" src="js/controllers/index/IndexController.js"></script>
+		<script type="text/javascript" src="js/controllers/index/IndexController.js"></script>
 		<!-- endbuild -->
 
 	</body>
